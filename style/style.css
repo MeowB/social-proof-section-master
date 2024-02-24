@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan";
+}
+
+body {
+  background-image: url(../images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.wrapper-background {
+  background-image: url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.catchPhrase {
+  text-align: center;
+}
+.catchPhrase h1 {
+  margin: 50px 20px 0 20px;
+  color: #502050;
+}
+.catchPhrase p {
+  padding: 26px;
+  line-height: 25px;
+  color: #937b92;
+  font-size: 15px;
+}
+
+main .rating {
+  list-style: none;
+  text-align: center;
+}
+main .rating li {
+  background-color: #f7f2f7;
+  margin: 20px;
+  padding: 20px 30px;
+  color: #502050;
+  font-weight: bold;
+  border-radius: 10px;
+}
+main .rating li img {
+  margin-bottom: 10px;
+}
+main .testimony li {
+  background-color: #502050;
+  color: #f7f2f7;
+  margin: 20px;
+  border-radius: 10px;
+}
+main .testimony li .profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 25px 40px 25px;
+}
+main .testimony li .profile img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+main .testimony li .profile .name {
+  margin-left: 25px;
+}
+main .testimony li .profile .name h2 {
+  font-size: 18px;
+}
+main .testimony li .profile .name p {
+  margin-top: 5px;
+  color: #ee68a4;
+}
+main .testimony li > p {
+  padding: 0 33px 33px 33px;
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 1350px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: calc(100vh - 14px);
+  }
+  main .catchPhrase {
+    width: 30%;
+    text-align: start;
+    margin: 150px 0 0 100px;
+  }
+  main .catchPhrase h1, main .catchPhrase p {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+  }
+  main .rating {
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 50%;
+  }
+  main .rating li {
+    display: flex;
+    width: 450px;
+  }
+  main .rating li .stars {
+    max-height: 20px;
+  }
+  main .rating li:nth-child(2) {
+    margin-left: 70px;
+  }
+  main .rating li:nth-child(3) {
+    margin-left: 140px;
+  }
+  main .testimony {
+    display: flex;
+    margin: 40px 80px 0 80px;
+  }
+  main .testimony li {
+    height: 350px;
+  }
+  main .testimony li:nth-child(2) {
+    margin-top: 30px;
+  }
+  main .testimony li:nth-child(3) {
+    margin-top: 60px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
